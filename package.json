@@ -12,7 +12,8 @@
     "client:preview": "cd client && npm run preview",
     "test": "cd client && npm test",
     "install:all": "npm install && cd client && npm install && cd ../server && npm install",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "cd client && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
