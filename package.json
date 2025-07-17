@@ -1,0 +1,23 @@
+{
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "A movie search application with React frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "server:start": "cd server && npm start",
+    "client:build": "cd client && npm run build",
+    "client:preview": "cd client && npm run preview",
+    "test": "cd client && npm test",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["react", "express", "movie", "search", "omdb"],
+  "author": "",
+  "license": "MIT"
+}
